@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./new-word.component.css']
 })
 export class NewWordComponent implements OnInit {
-
+  filter_data = 'Xem_tat_ca';
   newEn = '';
   newVn = '';
   isShowForm = false;
@@ -39,6 +39,14 @@ export class NewWordComponent implements OnInit {
 
   removeWord(id: number) {
     const index = this.arrWords.findIndex(word => word.id === id);
-    this.arrWords.splice(index);
+    this.arrWords.splice(index, 1);
+  }
+
+  filterData(memorized) {
+    const dkXemtatca = this.filter_data === 'Xem_tat_ca';
+    const dkXem_1 = this.filter_data === 'Xem_1' && memorized;
+    const dkXem_2 = this.filter_data === 'Xem_2' && !memorized;
+
+    return dkXemtatca || dkXem_1 || dkXem_2;
   }
 }

@@ -1,5 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule, Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
@@ -9,6 +9,11 @@ import { UserFormComponent } from './user-form/user-form.component';
 import { StructComponent } from './struct/struct.component';
 import { WordsComponent } from './words/words.component';
 import { NewWordComponent } from './new-word/new-word.component';
+import { PersonComponent } from './person/person.component';
+import { ListPersonComponent } from './list-person/list-person.component';
+import { ParentComponent } from './parent.componet';
+import { ChildComponent } from './child.componet';
+import { AppRoutingModule } from './app-routingModule';
 
 @NgModule({
   declarations: [
@@ -18,11 +23,16 @@ import { NewWordComponent } from './new-word/new-word.component';
     UserFormComponent,
     StructComponent,
     WordsComponent,
-    NewWordComponent
+    NewWordComponent,
+    PersonComponent,
+    ListPersonComponent,
+    ParentComponent,
+    ChildComponent,
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
