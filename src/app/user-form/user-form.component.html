@@ -1,0 +1,9 @@
+<input type="text" placeholder="run" [(ngModel)]="name" #info>
+<!-- <h3 [style.color]="name.length % 2 === 0 ? 'red' : 'black'">Your name is: {{name}}</h3> -->
+<!-- <h3 [style.color]="isHightLight ? 'black' : 'red'"
+    [style.font-size]="isHightLight ? '40px': '30px'">Your name is: {{name}}</h3> -->
+<!-- <code>{{ info.value | json}}</code> -->
+<h3 [ngStyle]="name.length % 2 === 0 ? evenStyle : oddStyle">you name is: {{name}}</h3>
+<!-- <div [class] = "isHightLight ? 'circle' : 'square'"></div> -->
+<!-- <div [class.circle]="!isHightLight" [class.square]="isHightLight"></div> -->
+<div [ngClass]="currentClass"></div>
