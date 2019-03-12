@@ -11,8 +11,12 @@ import { WordsComponent } from './words/words.component';
 import { NewWordComponent } from './new-word/new-word.component';
 import { PersonComponent } from './person/person.component';
 import { ListPersonComponent } from './list-person/list-person.component';
-import { ParentComponent } from './parent.componet';
-import { ChildComponent } from './child.componet';
+import { ParentComponent } from './parent.component';
+import { ChildComponent } from './child.component';
+import { ViewChildComponent } from './view-child.component';
+import { ViewParentComponent } from './view-parent.component';
+import { CardComponent } from './card.component';
+
 import { AppRoutingModule } from './app-routingModule';
 
 @NgModule({
@@ -28,6 +32,9 @@ import { AppRoutingModule } from './app-routingModule';
     ListPersonComponent,
     ParentComponent,
     ChildComponent,
+    ViewChildComponent,
+    ViewParentComponent,
+    CardComponent
   ],
   imports: [
     BrowserModule,

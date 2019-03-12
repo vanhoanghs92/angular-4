@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./new-word.component.css']
 })
 export class NewWordComponent implements OnInit {
-  filter_data = 'Xem_tat_ca';
+  FilterData = 'Xem_tat_ca';
   newEn = '';
   newVn = '';
   isShowForm = false;
@@ -43,10 +43,10 @@ export class NewWordComponent implements OnInit {
   }
 
   filterData(memorized) {
-    const dkXemtatca = this.filter_data === 'Xem_tat_ca';
-    const dkXem_1 = this.filter_data === 'Xem_1' && memorized;
-    const dkXem_2 = this.filter_data === 'Xem_2' && !memorized;
+    const dkXemtatca = this.FilterData === 'Xem_tat_ca';
+    const dkXem1 = this.FilterData === 'Xem_1' && memorized;
+    const dkXem2 = this.FilterData === 'Xem_2' && !memorized;
 
-    return dkXemtatca || dkXem_1 || dkXem_2;
+    return dkXemtatca || dkXem1 || dkXem2;
   }
 }
