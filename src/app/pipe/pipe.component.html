@@ -1,0 +1,60 @@
+
+<h1>1.Interpolation</h1>
+<p>
+{{1.9 | roundNumber}}
+{{3.4 | roundNumber}}
+</p>
+<h3>
+  {{name}}
+</h3>
+<h2>{{showInfo()}}</h2>
+
+<hr>
+
+<h1>2.Property binding</h1>
+
+<img [src]="imgLink" [alt]="altLink" bind-width="width">;
+
+<hr>
+
+<h1>3. Attribute</h1>
+
+<table border ="1" [attr.width]="width" [attr.data]="value">
+  <tr>
+    <td>ID</td>
+    <td>Name</td>
+    <td>Phone</td>
+  </tr>
+
+  <tr>
+    <td>1</td>
+    <td>Alan</td>
+    <td>123456</td>
+  </tr>
+</table>
+
+<hr>
+
+<h1>4. Class Binding</h1>
+
+<table border ="5" [attr.width]="width" [class.add-class] = "isBorder" [class.add-check]="isCheck === 1">
+  <tr>
+    <td>ID</td>
+    <td>Name</td>
+    <td>Phone</td>
+  </tr>
+
+  <tr>
+    <td>1</td>
+    <td>Alan</td>
+    <td>123456</td>
+  </tr>
+</table>
+
+<hr>
+
+<h1>5. Style Binding</h1>
+
+<div [style.color]="isSpecial ? 'red' : 'yellow'" [style.font-size.px]="size">
+   Lap trinh Angular 4
+</div>

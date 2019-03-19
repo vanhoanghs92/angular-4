@@ -18,6 +18,11 @@ import { ViewParentComponent } from './view-parent.component';
 import { CardComponent } from './card.component';
 
 import { AppRoutingModule } from './app-routingModule';
+import { PipeComponent } from './pipe/pipe.component';
+import { RoundPie } from './round.pipe';
+import { EvenBindingComponent } from './even-binding/even-binding.component';
+import { ViewComponentViewComponent } from './view-component-view/view-component-view.component';
+import { StructuralComponent } from './structural/structural.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +39,12 @@ import { AppRoutingModule } from './app-routingModule';
     ChildComponent,
     ViewChildComponent,
     ViewParentComponent,
-    CardComponent
+    CardComponent,
+    PipeComponent,
+    RoundPie,
+    EvenBindingComponent,
+    ViewComponentViewComponent,
+    StructuralComponent
   ],
   imports: [
     BrowserModule,

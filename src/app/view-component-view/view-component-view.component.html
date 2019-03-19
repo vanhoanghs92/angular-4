@@ -1,0 +1,18 @@
+<p>
+  view-component-view works!
+</p>
+
+<div>
+  <label> UserName: {{name}} </label> <br>
+  <input type="text" [(ngModel)] = "name">
+</div>
+
+<hr>
+
+<form action="">
+  <h3>Gioi tinh: {{gender == 0 ? 'nam' : 'nu'}}</h3>
+  <select name="" id="" [ngModelOptions]="{standalone: true}" [(ngModel)]="gender">
+    <option value="0">nam</option>
+    <option value="1">nu</option>
+  </select>
+</form>

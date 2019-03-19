@@ -4,7 +4,12 @@ import { Component } from '@angular/core';
     selector: 'app-card',
     template: `
         <div class="card">
-            <ng-content></ng-content>
+            <div class="header">
+                <ng-content select=".card-header"></ng-content>
+            </div>
+            <div class="body">
+                <ng-content select=".card-body"></ng-content>
+            </div>
         </div>
     `,
     styles: [`
@@ -20,4 +25,4 @@ import { Component } from '@angular/core';
     `]
 })
 
-export class CardComponent {}
+export class CardComponent { }

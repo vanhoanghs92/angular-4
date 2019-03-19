@@ -1,0 +1,19 @@
+<p>
+  structural works!
+</p>
+
+<h1 *ngIf="isShow" > Ho ten : {{name}}</h1>
+
+<button (click)="onToogle($event)">Toogle</button>
+
+<hr>
+<div>
+  <label>
+    <input type="radio" (click)="onChange(true)" >
+    Hop Le
+    <input type="radio" (click)="onChange(false)">
+    Khong Hop Le
+  </label>
+  <h3 *ngIf="isCheck" >Hop le</h3>
+  <h3 *ngIf="!isCheck" >Khong Hop le</h3>
+</div>

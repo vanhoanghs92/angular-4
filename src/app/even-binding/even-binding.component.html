@@ -1,0 +1,19 @@
+<h1>
+  {{title}}
+</h1>
+
+<button type="button" (click)="onClickMe($event)"> Click me! </button>
+<button type="button" (click)="count = count + 1"> count </button>
+{{count}}
+
+<hr>
+<form action="">
+<label>UserName: {{username}}</label><br>
+<input type="text" (keyup)="onKeyUp($event)">
+
+</form>
+
+<form action="">
+    <label>UserName: {{name}}</label><br>
+    <input type="text" (keyup.enter)="onKeyUpEnter($event)">
+</form>
